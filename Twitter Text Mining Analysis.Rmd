@@ -3,7 +3,8 @@ title: "Twitter Text Mining Analysis"
 author: "Qingqing (Larissa) Long"
 date: "July 9, 2018"
 output:
-  rmarkdown::github_document
+  html_document;
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE, comment=NA, echo=FALSE}
