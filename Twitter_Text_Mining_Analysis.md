@@ -2,7 +2,7 @@
 title: "Twitter Text Mining Analysis"
 author: "Qingqing (Larissa) Long"
 date: "July 9, 2018"
-output:
+output: 
   html_document:
     keep_md: true
 
@@ -373,8 +373,8 @@ tidy_tweets %>%
   wordcloud2(.)
 ```
 
-<!--html_preserve--><div id="htmlwidget-a29009dd426ae3814cbe" style="width:864px;height:480px;" class="wordcloud2 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a29009dd426ae3814cbe">{"x":{"word":["@petco","dog","saturday","meet","tomorrow","pet","adoption","store","foster","home","cat","day","love","time","#petco","@petsmart","animal","care","people","animals","dogs","event","july","dm","visit","don","kittens","cute","fish","padres","petsmart","phone","cats","join","ll","san","ve","attention","bringing","buy","food","im","learn","stop","fuck","gift","happy","local","stadium","tx"],"freq":[147,38,33,31,28,27,25,23,22,20,18,18,18,18,17,17,17,17,17,16,16,16,16,15,15,14,14,13,13,13,13,13,12,12,12,12,12,11,11,11,11,11,11,11,10,10,10,10,10,10],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":1.22448979591837,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-944e7ee19c2ad1a81212" style="width:864px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-944e7ee19c2ad1a81212">{"x":{"word":["@petco","dog","saturday","meet","tomorrow","pet","adoption","store","foster","home","cat","day","love","time","#petco","@petsmart","animal","care","people","animals","dogs","event","july","dm","visit","don","kittens","cute","fish","padres","petsmart","phone","cats","join","ll","san","ve","attention","bringing","buy","food","im","learn","stop","fuck","gift","happy","local","stadium","tx"],"freq":[147,38,33,31,28,27,25,23,22,20,18,18,18,18,17,17,17,17,17,16,16,16,16,15,15,14,14,13,13,13,13,13,12,12,12,12,12,11,11,11,11,11,11,11,10,10,10,10,10,10],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":1.22448979591837,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 All hashtags and Twitter handles! Let's see what's the most common if I **omit hashtags and handles**:
 
