@@ -2,13 +2,14 @@
 title: "Twitter Text Mining Analysis"
 author: "Qingqing (Larissa) Long"
 date: "July 9, 2018"
-output:
-  html_document;
+output: 
+  html_document:
     keep_md: true
+
 ---
 
 ```{r setup, include=FALSE, comment=NA, echo=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, comment = NA, message = FALSE, fig.width = 9, fig.path = "README_figs/README-")
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, comment = NA, message = FALSE, fig.width = 9)
 ```
 
 
@@ -46,6 +47,7 @@ pacman::p_load(
 # disable scientific notation in plots
 options(scipen = 999)
 ```
+
 
 ## Data Exploration
 
