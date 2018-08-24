@@ -52,40 +52,6 @@ pacman::p_load(
 options(scipen = 999)
 ```
 
-## Data Fetching
-
-Twitter provides a free standard search API which searches against a sampling of recent Tweets published in the past week. The first step for data fetching is to create an app on https://dev.twitter.com (My apps menu) to receive an API Key, API secret, Access Token and Access Token Secret on "Keys and Access Tokens" menu tab.
-
-```{r eval = FALSE}
-# # Set up Twitter Search API connection by authonitical keys
-consumer_key <- "Q1QONJOAazTn1fbGjYqeE9RP8"
-consumer_secret <- "G3IBezap7VHwXX8u8CdeW0RV5FwCD0VYOisxQcHHBFqtPZv2xU"
-access_token <- "1013930459133165568-ETBK73zUJCvgtPbe6VwcktgzlWoJtI"
-access_secret <- "w7HUn8pTUKz8FBjYz91BQF9Zz9d8aE7FRszSeQH4aU6QN"
-
-setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
-```
-
-Once Twitter authentication is set up, it's feasible to search for the tweets containing keyword 'petco' in the past few days. The code below returns 1,372 tweets from June 26 to July 6, 2018. 
-
-All Twitter APIs that return Tweets provide that data encoded using JavaScript Object Notation (JSON). I then transform it into data frame and save it locally for easy access later.
-
-```{r eval=FALSE}
-# Search for tweets containing "petco" but excluding "park":
-tweets <- searchTwitter('petco -park', lang = "en", n = 50000, since = "2018-06-01", resultType = "mixed")
-n.tweet <- length(tweets) # 1372 tweets found from Jun 26 to July 6, 2018
-
-# Transform tweets list into a data frame
-tweets.df <- twListToDF(tweets)
-head(tweets.df, 5)
-
-# Save data locally
-saveRDS(tweets.df, file = "data/Twitter/tweets_park_deleted.rds")
-```
-
-NOtes: Twitter standard search API is not meant to be an exhaustive source of Tweets, which means not all tweets will be indexed or made available via the search interface. Some Tweets and users may be missing from search results. If we want to match for completeness we should consider the premium or enterprise search APIs which will be paid.
-
-
 ## Data Exploration
 
 We load data to get a glimpse of tweets. The data contains 1,372 records with 16 variables created from June 26 to July 6, 2018. 54% of them were unique posts and 46% of them were retweets. 
