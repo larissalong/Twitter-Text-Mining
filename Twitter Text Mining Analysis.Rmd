@@ -3,17 +3,11 @@ title: "Twitter Text Mining Analysis"
 author: "Qingqing (Larissa) Long"
 date: "July 9, 2018"
 output:
-  html_document:
-    highlight: textmate
-    theme: spacelab
-    df_print: paged
-    toc: yes
-    code_folding: hide
-    code_download: true
+  rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE, comment=NA, echo=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, comment = NA, message = FALSE, fig.width = 9)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, comment = NA, message = FALSE, fig.width = 9, fig.path = "README_figs/README-")
 ```
 
 
