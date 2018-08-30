@@ -5,3 +5,5 @@ Twitter is an American online news and social networking service on which users 
 • To deep dive into customer online behavior on Twitter, i.e., where they come from, what they talk about and where they go
 
 • To identify the overall brand-wise sentiment on Twitter
+
+Please refer to the report in .md file.
