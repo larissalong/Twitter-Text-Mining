@@ -11,7 +11,7 @@ access_secret <- 'your_access_secret'
 
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
-# Search for tweets containing "petco" but not "park":
+# Search for tweets containing keywords:
 tweets <- searchTwitter('your_keywords', lang = "en", n = 50000, since = "2018-06-01", resultType = "mixed")
 head(tweets, 20)
 
