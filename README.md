@@ -6,4 +6,4 @@ Twitter is an American online news and social networking service on which users 
 
 • To identify the overall brand-wise sentiment on Twitter
 
-Please refer to data collection code in get_tweets.r and the report in .md file.
+Please refer to data collection code in get_tweets.r and the report in Twitter_Text_Mining_Analysis.md file.
