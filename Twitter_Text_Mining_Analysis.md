@@ -50,7 +50,7 @@ options(scipen = 999)
 
 ## Data Exploration
 
-We load data to get a glimpse of tweets. The data contains 1,372 records with 16 variables created from June 26 to July 6, 2018. 54% of them were unique posts and 46% of them were retweets. 
+I load data to get a glimpse of tweets. The data contains 1,372 records with 16 variables created from June 26 to July 6, 2018. 54% of them were unique posts and 46% of them were retweets. 
 
 
 ```r
